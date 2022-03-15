@@ -1,0 +1,72 @@
+<!DOCTYPE html>  
+<html>  
+
+<body style = "text-align: center; font-size: 20px;">  
+<h1> prime numbers</h1>  
+Enter a number: <input id = "num">  
+<br><br>  
+<button onclick = "prime()"> primee </button>  
+<p id = "res"></p>  
+<script>  
+
+// function prime(){   
+//     var i, num, count;  
+// count = 0;  
+// num = document.getElementById("num").value;  
+// for (i=2;i<=num;i++){
+//     count = 0;  
+//     for (j=2;j<i;j++){
+//         if(i%j==0){
+//             count=1
+//             break
+
+//         }
+      
+
+//     }
+//     if(count==0){
+//         console.log(i)
+//     }
+    
+
+// }
+   
+//  }  
+  
+  function prime(){   
+
+numb = document.getElementById("num").value; 
+for (i=2;i<=numb;i++){//2 3 4
+   fl=0
+     for(j=2;j<i;j++){
+     if(i%j==0){
+     fl=1
+     break
+     
+     }
+
+ 
+ }
+ if(fl==0){
+    console.log(i)    //2 3 5
+    }
+     
+}
+
+  }
+
+  
+
+ 
+ 
+</script>  
+</body>  
+</html>
+
+
+
+
+
+
+ 
+
